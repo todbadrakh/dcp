@@ -1,4 +1,7 @@
-# References
+---
+title: "References"
+layout: default
+---
 
 1. Neese, F. *Software update: The ORCA program system, version 5.0*. **WIRES Comput. Mol. Sci.** 2022, **12**(1), e1606. [https://doi.org/10.1002/wcms.1606](https://doi.org/10.1002/wcms.1606)  
 2. Neese, F.; Wennmohs, F.; Hanse, A.; Becker, U. *Efficient, approximate and parallel Hartree-Fock and hybrid DFT calculations. A ‘chain-of-spheres’ algorithm for the Hartree-Fock exchange*. **Chem. Phys.** 2009, **356**(1–3), 98–109. [https://doi.org/10.1016/j.chemphys.2008.10.036](https://doi.org/10.1016/j.chemphys.2008.10.036)  
