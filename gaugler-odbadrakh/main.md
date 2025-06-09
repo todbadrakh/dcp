@@ -11,7 +11,7 @@ The pKa of pyridine is calculated at the &omega;B97X-D3/def2-TZVP level of theor
 using various levels of explicit solvation. Utility scripts are available at:
 [github.com/todbadrakh/orca-tools](https://github.com/todbadrakh/orca-tools)
 
-### Scaling on 1-16 Ryzen Cores
+### Scaling on 1-16 AMD Ryzen Cores
 ```! opt freq wb97x-d3 def2-tzvp cpcm(water)```
 
 calculations were scaled from 1-16 Ryzen cores on my home PC to determine the optimal
@@ -25,6 +25,19 @@ Below are timing data in seconds:
 | 4 | 602.663 | 7.938 | 142.488 | 63.524 | 52.047 | 243.069 | 93.544 | 0.053 |
 | 8 | 273.224 | 5.678 | 71.567 | 28.211 | 23.406 | 95.248 | 49.097 | 0.016 |
 | 16.000 | 314.222 | 12.140 | 90.561 | 33.360 | 36.812 | 86.277 | 55.057 | 0.015 |
+
+### Scaling on 1-128 AMD Epyc Cores
+
+| nproc | Total | Startup | SCF | Integrals | SCF_Response | Properties | Gradient | Relax |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1.000 | 39.326 |  |  |  |  |  |  |  |
+| 2.000 | 519.989 | 3.297 | 64.776 | 83.844 | 56.143 | 286.403 | 25.520 | 0.006 |
+| 4.000 | 267.878 | 2.994 | 34.456 | 42.989 | 30.244 | 143.650 | 13.504 | 0.040 |
+| 8.000 | 147.617 | 2.817 | 20.473 | 23.803 | 18.956 | 74.068 | 7.493 | 0.007 |
+| 16.000 | 90.550 | 3.383 | 14.550 | 14.644 | 12.945 | 40.362 | 4.660 | 0.006 |
+| 32.000 | 64.689 | 3.680 | 11.902 | 10.327 | 11.020 | 24.204 | 3.549 | 0.006 |
+| 64.000 | 57.692 | 4.715 | 12.333 | 9.667 | 11.991 | 15.803 | 3.177 | 0.006 |
+| 128.000 | 98.103 | 8.270 | 20.010 | 13.730 | 34.766 | 16.577 | 4.745 | 0.006 |
 
 ---
 
